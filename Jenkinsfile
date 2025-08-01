@@ -65,9 +65,9 @@ pipeline {
 
                     if (-not (Test-Path "IIS:\\Sites\\$siteName")) {
                         New-Website -Name $siteName -Port $port -PhysicalPath $physicalPath -Force
-                        Write-Host "✅ Website $siteName created."
+                        Write-Host " Website $siteName created."
                     } else {
-                        Write-Host "ℹ️ Website $siteName already exists."
+                        Write-Host "ℹ Website $siteName already exists."
                     }
                 '''
             }
