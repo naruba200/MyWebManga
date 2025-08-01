@@ -12,7 +12,7 @@ pipeline {
 
         stage('Restore Packages') {
             steps {
-                echo '📦 Restoring NuGet packages...'
+                echo ' Restoring NuGet packages...'
                 bat 'dotnet restore'
             }
         }
